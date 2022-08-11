@@ -99,13 +99,7 @@ input:hover {
   height: 3.6rem;
 }
 
-#screen-two {
-  font-size: calc(75%);
-  color: var(--main-blue);
-  padding-bottom: 0.2em;
-}
-
-#screen-one {
+#screen {
   font-size: calc(200%);
 }
 

@@ -77,7 +77,7 @@ function resetCalculator() {
 }
 
 function updateDisplay() {
-    const display = document.getElementById('screen-one')
+    const display = document.getElementById('screen')
     display.textContent = calculator.displayValue
 }
 
