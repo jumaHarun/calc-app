@@ -24,7 +24,9 @@ Users should be able to:
 ### Screenshot
 
 ![Screenshot](screenshots/Calculator App(Theme 1).png)
+
 ![Screenshot](screenshots/Calculator App(Theme 2).png)
+
 ![Screenshot](screenshots/Calculator App(Theme 3).png)
 
 ### Links
