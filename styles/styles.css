@@ -1,18 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 
-:root {
-  --main-blue: #3B4764;
-  --dark-blue: #182034;
-  --dark-blue-2: #182034;
-  --light-blue: #637097;
-  --blue-shadow: #404E72;
-  --red: #D03F2F;
-  --red-shadow: #93261A;
-}
+:root,
+    :root.blue{
+      --main-bg: #3B4764;
+      --screen-bg: #182034;
+      --font-color: #FFF;
+      --keypad-bg: #232C43;
+      --keys-color: #444B5A;
+      --keys-bg: #EAE3DC;
+      --keys-bg-shadow: #B4A597;
+      --keys-bg-hover: #FFF;
+      --reset-bg: #3B4764;
+      --reset-bg-shadow: #404E72;
+      --reset-bg-hover: #637097;
+      --equals-bg: #D03F2F;
+      --equals-bg-shadow: #93261A;
+      --equals-bg-hover: #F03823;
+      --transition: all .3s ease-in-out;
+    }
+    :root.gray {
+      --main-bg: #E6E6E6;
+      --screen-bg: #EDEDED;
+      --font-color: #000;
+      --keypad-bg: #D1CCCC;
+      --keys-color: #35352C;
+      --keys-bg: #E5E4E1;
+      --keys-bg-shadow: #A69D91;
+      --keys-bg-hover: #FFF;
+      --reset-bg: #377F86;
+      --reset-bg-shadow:  #1B5F65;
+      --reset-bg-hover: #4BA9B2;
+      --equals-bg: #CA5502;
+      --equals-bg-shadow: #893901;
+      --equals-bg-hover: #E36003;
+    }
+    :root.violet {
+      --main-bg: #160628;
+      --screen-bg: #1D0934;
+      --font-color: #FFE53D;
+      --keypad-bg: #1D0934;
+      --keys-color: #FFE53D;
+      --keys-bg: #341C4F;
+      --keys-bg-shadow: #871C9C;
+      --keys-bg-hover: #8954c5;
+      --reset-bg: #58077D;
+      --reset-bg-shadow: #871C9C;
+      --reset-bg-hover: #BC15F4;
+      --equals-bg: #00E0D1;
+      --equals-bg-shadow: #1B5F65;
+      --equals-bg-hover: #6CF9F2;
+    }
 
 * {
   margin: 0;
   padding: 0;
+  transition: var(--transition);
 }
 
 *,
@@ -27,14 +69,14 @@ html {
 
 body {
   height: 100vh;
-  background: var(--main-blue);
-  width: 100%;
+  background: var(--main-bg);
+  width: 100vw;
   font-family: 'League Spartan', sans-serif;
-  color: #FFF;
+  color: var(--font-color);
 }
 
 main {
-  max-width: 24em;
+  max-width: 28em;
   margin: 0 auto;
   padding-top: 1em;
 }
@@ -69,7 +111,7 @@ input {
   width: 10px;
   height: 10px;
   appearance: none;
-  background: var(--red);
+  background: var(--equals-bg);
   border-radius: 50%;
   opacity: 0;
   margin: 0;
@@ -77,12 +119,13 @@ input {
 
 input:hover {
   cursor: pointer;
+  background: var(--equals-bg-hover);
 }
 
 .toggle-theme {
   display: flex;
   justify-content: center;
-  background-color: var(--dark-blue);
+  background-color: var(--keypad-bg);
   border-radius: 50px;
 }
 
@@ -91,49 +134,112 @@ input:hover {
 }
 
 .screen-output {
-  background: var(--dark-blue);
+  background: var(--screen-bg);
   border-radius: 5px;
   text-align: right;
   padding: 1em 0.5em;
   margin: 1.2rem 0;
-  height: 3.6rem;
 }
 
 #screen {
-  font-size: calc(200%);
+  font-size: calc(250%);
 }
 
 .dials {
   border-radius: 10px;
-  background: var(--dark-blue-2);
+  background: var(--keypad-bg);
   padding: 1rem;
+  height: 100%;
 }
 
 .grid-btn {
   font-family: 'League Spartan', sans-serif;
   font-size: calc(150%);
+  border: none;
   border-radius: 10px;
-  background: #EAE3DC;
-  color: var(--dark-blue)
+  background: var(--keys-bg);
+  color: var(--keys-color);
+  box-shadow: 0 3px var(--keys-bg-shadow);
+}
+
+.grid-btn:hover {
+  background: var(--keys-bg-hover);
 }
 
 .btn-wrapper {
   height: 50vh;
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+#reset,
+#clear {
+  background: var(--reset-bg);
+  color: #FFF;
+  box-shadow: 0 3px var(--reset-bg-shadow);
+}
+
+#reset:hover,
+#clear:hover {
+  background: var(--reset-bg-hover);
 }
 
 #reset {
   grid-column: 1 / 3;
-  background: var(--main-blue);
-  color: #FFF;
-  border-color: var(--main-blue);
 }
 
 #equals {
   grid-column: 3 / 5;
-  background: var(--red);
+  background: var(--equals-bg);
   color: #FFF;
-  border-color: var(--red);
+  box-shadow: 0 3px var(--equals-bg-shadow);
+}
+
+#equals:hover {
+  background: var(--equals-bg-hover);
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.6em;
+}
+
+footer a {
+  color: var(--font-color);
+}
+
+footer a::before,
+footer a::after {
+  color: inherit;
+}
+
+/* Media queries */
+@media (min-width: 481px) and (max-width: 768px) {
+  main {
+    max-width: 26rem;
+  }
+  
+  .btn-wrapper {
+    grid-gap: 0.5rem;
+  }
+  
+  .grid-btn {
+    height: calc(90%);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  main {
+    max-width: 18rem;
+  }
+  
+  .btn-wrapper {
+    grid-gap: 0.5rem;
+  }
+  
+  .grid-btn {
+    height: calc(85%);
+  }
 }

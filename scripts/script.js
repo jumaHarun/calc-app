@@ -138,3 +138,12 @@ arr.forEach((element, index) => {
     })
   })
 })
+
+// Change color theme
+const setTheme = theme => document.documentElement.className = theme
+
+for(let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('change', function() {
+        setTheme(this.value)
+    })
+}
