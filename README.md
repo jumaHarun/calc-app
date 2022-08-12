@@ -6,7 +6,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
@@ -21,13 +21,13 @@ Users should be able to:
 - Perform mathmatical operations like addition, subtraction, multiplication, and division
 - Adjust the color theme based on their preference
 
-### Screenshot
+### Screenshots
 
-![Screenshot](screenshots/Calculator App(Theme 1).png)
+![screenshot](https://github.com/jumaHarun/calc-app/blob/b14e5a979c6c1995e4a3564985e5e6816074b834/screenshots/Calculator%20App(Theme%201).png "Theme one")
 
-![Screenshot](screenshots/Calculator App(Theme 2).png)
+![screenshot](https://github.com/jumaHarun/calc-app/blob/b14e5a979c6c1995e4a3564985e5e6816074b834/screenshots/Calculator%20App(Theme%202).png "Theme two")
 
-![Screenshot](screenshots/Calculator App(Theme 3).png)
+![screenshot](https://github.com/jumaHarun/calc-app/blob/b14e5a979c6c1995e4a3564985e5e6816074b834/screenshots/Calculator%20App(Theme%203).png "Theme three")
 
 ### Links
 
