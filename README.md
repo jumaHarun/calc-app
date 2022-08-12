@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](jumaHarun/calc-app/screenshots/Calculator App(Theme 3).png)
+[Calculator App Screenshot](jumaHarun/calc-app/screenshots/Calculator App(Theme 3).png)
 
 ### Links
 
