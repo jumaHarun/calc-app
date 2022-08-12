@@ -23,7 +23,9 @@ Users should be able to:
 
 ### Screenshot
 
-[Calculator App Screenshot](jumaHarun/calc-app/screenshots/Calculator App(Theme 3).png)
+![Screenshot](screenshots/Calculator App(Theme 1).png)
+![Screenshot](screenshots/Calculator App(Theme 2).png)
+![Screenshot](screenshots/Calculator App(Theme 3).png)
 
 ### Links
 
