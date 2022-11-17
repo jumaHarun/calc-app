@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="calculator-app" content="calculator-app">
+    <title>Calculator App | Juma Harun</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+
+  <body>
+    <main id="main">
+      
+      <section class="header-sect">
+          <h1 class="header-txt">calc</h1>
+          
+          <div class="theme-select">
+            <div class="theme-text-div">
+                <p id="theme-text">THEME</p>
+            </div>
+            <div id="radio-wrapper">
+              <div class="label-wrapper">
+                  <label for="theme-1">1</label>
+                  <label for="theme-2">2</label>
+                  <label for="theme-3">3</label>
+              </div>
+
+              <div class="toggle-theme" id="toggle-theme-wrapper">
+                  <input class="t-btns" type="radio" name="toggle" id="theme-1" value="blue">
+                  <input class="t-btns" type="radio" name="toggle" id="theme-2" value="gray">
+                  <input class="t-btns" type="radio" name="toggle" id="theme-3" value="violet">
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="screen-output">
+            <div class="screen" id="screen"></div>
+      </section>
+
+      <section class="dials" id="calc-dials">
+        <div class="btn-wrapper">
+            <button class="grid-btn digit" id="seven" value="7">7</button>
+            <button class="grid-btn digit" id="eight" value="8">8</button>
+            <button class="grid-btn digit" id="nine" value="9">9</button>
+            <button class="grid-btn clear" id="clear" value="clear">AC</button>
+            <button class="grid-btn digit" id="four" value="4">4</button>
+            <button class="grid-btn digit" id="five" value="5">5</button>
+            <button class="grid-btn digit" id="six" value="6">6</button>
+            <button class="grid-btn operator" id="plus" value="+">&plus;</button>
+            <button class="grid-btn digit" id="one" value="1">1</button>
+            <button class="grid-btn digit" id="two" value="2">2</button>
+            <button class="grid-btn digit" id="three" value="3">3</button>
+            <button class="grid-btn operator" id="minus" value="-">&minus;</button>
+            <button class="grid-btn decimal" id="decimal" value=".">.</button>
+            <button class="grid-btn digit" id="zero" value="0">0</button>
+            <button class="grid-btn operator" id="divide" value="/">&divide;</button>
+            <button class="grid-btn operator" id="multiply" value="*">&times;</button>
+            <button class="grid-btn reset" id="reset" value="reset">RESET</button>
+            <button class="grid-btn operator" id="equals" value="=">&equals;</button>
+        </div>
+      </section>
+    </main>
+
+      <script src="scripts/script.js"></script>
+
+  </body>
+
+</html>
